@@ -1,0 +1,23 @@
+// File: hello.vale
+// Year: 2020
+//
+// To get Vale:
+//   Clone the repo and install:
+//     git clone https://github.com/ValeLang/Vale   :contentReference[oaicite:0]{index=0}
+//     cd Vale && ./scripts/install.sh
+//   Or download prebuilt releases from https://vale.dev   :contentReference[oaicite:1]{index=1}
+//
+// To compile to a native executable:
+//   vale build hello.vale -o hello
+//
+// To run without compiling (interpreted mode):
+//   vale run hello.vale
+//
+// To make a standalone .exe on Windows (after native build):
+//   rename hello.exe helloWorld.exe
+//
+// Use `vale help` for more commands.
+
+exported func main() {
+    println("Hello, World!");
+}

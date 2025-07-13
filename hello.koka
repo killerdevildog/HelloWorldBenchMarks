@@ -1,0 +1,27 @@
+// File: hello.koka
+// Year: 2016
+//
+// To get Koka compiler (prebuilt binaries):
+//   • Download from GitHub Releases: https://github.com/koka-lang/koka/releases :contentReference[oaicite:0]{index=0}
+//   • Or via Homebrew (macOS/Linux):  
+//       brew install koka :contentReference[oaicite:1]{index=1}
+//
+// To build from source:
+//   git clone https://github.com/koka-lang/koka.git :contentReference[oaicite:2]{index=2}  
+//   cd koka && mkdir build && cd build && cmake .. && make
+//
+// To run directly (interpreted/compiled on the fly):
+//   koka hello.koka --run
+//
+// To compile to a standalone executable (via C backend):
+//   koka --target=exe --out=hello.c hello.koka
+//   cc hello.c -o hello -std=c11
+//
+// To make a .exe on Windows (post-compile):
+//   rename hello.exe helloWorld.exe
+//
+// Use `koka --help` for more options.
+
+let main() {
+  println("Hello, World!")
+}

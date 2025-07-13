@@ -1,0 +1,29 @@
+// File: hello.u
+// Year: 2020
+//
+// To get Unison (with Homebrew) on macOS/Linux/Windows (64-bit):
+//   brew tap unisonweb/unison  
+//   brew install unison-language   :contentReference[oaicite:0]{index=0}  
+//
+// To initialize your Unison codebase (if you haven’t already):
+//   ucm  
+//   .> init   :contentReference[oaicite:1]{index=1}  
+//
+// To load and run your program in the Unison Codebase Manager (UCM):
+//   ucm  
+//   .> load hello.u  
+//   .> hello  
+//
+// To run outside of the interactive UCM (script mode):
+//   ucm run hello.u  
+//
+// To make a standalone executable (bundle) after verifying in UCM:
+//   ucm bundle hello --output hello  
+//   (On Windows, rename hello.exe helloWorld.exe)
+//
+// (For more details, see https://www.unison-lang.org/docs/quickstart/)
+
+use io
+
+hello =
+  io.println "Hello, World!"

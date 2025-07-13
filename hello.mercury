@@ -1,0 +1,29 @@
+% File: hello.m
+% Year: 1995  
+%
+% To get Mercury compiler (Melbourne Mercury Compiler):
+%   • Visit https://mercurylang.org/download.html to grab a release or source :contentReference[oaicite:0]{index=0}  
+%   • On macOS (Homebrew): brew install mercury  
+%   • On Debian/Ubuntu: sudo apt install mercury  
+%
+% To compile to native executable:
+%   mmc hello.m -o hello  
+%
+% To run the compiled program:
+%   ./hello  
+%
+% To run in interpreted mode (via UCI):
+%   umi --run hello.m  
+%
+% To make a standalone .exe on Windows (after native build):
+%   rename hello.exe helloWorld.exe
+
+:- module hello.
+:- interface.
+:- import_module io.
+
+:- pred main(io::di, io::uo) is det.
+:- implementation.
+
+main(!IO) :-
+    io.write_string("Hello, World!\n", !IO).

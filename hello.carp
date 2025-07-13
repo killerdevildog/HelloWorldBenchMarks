@@ -1,0 +1,22 @@
+; File: hello.carp
+; Year: 2019
+;
+; To get Carp:
+;   • Homebrew (macOS/Linux): brew install carp-lang/carp/carp
+;   • Cargo (Rust):        cargo install carp
+;   • GitHub & source:     https://github.com/carp-lang/carp
+;
+; To compile to a native executable:
+;   carp compile hello.carp -o hello
+;
+; To run without separate compile (script mode):
+;   carp run hello.carp
+;
+; To run the compiled program:
+;   ./hello
+;
+; To make a standalone .exe on Windows:
+;   rename hello.exe helloWorld.exe
+
+(defn main []
+  (println "Hello, World!"))

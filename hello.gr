@@ -1,0 +1,27 @@
+// File: hello.gr
+// Year: 2022
+//
+// To get Grain and the CLI:
+//   • Download prebuilt binaries for your platform from https://grain-lang.org/docs/getting_grain   :contentReference[oaicite:0]{index=0}
+//   • Or via Homebrew on macOS/Linux:
+//       brew install grain-lang/grain/grain   :contentReference[oaicite:1]{index=1}
+//   • Or install from npm (requires Node.js):
+//       npm install -g @grain/stdlib grain-cli   :contentReference[oaicite:2]{index=2}
+//
+// To run (compile & execute in one step):
+//   grain hello.gr   :contentReference[oaicite:3]{index=3}
+//
+// To compile to WebAssembly bytecode then run separately:
+//   grain compile hello.gr --release --output hello.wasm   :contentReference[oaicite:4]{index=4}
+//   grain run hello.wasm   :contentReference[oaicite:5]{index=5}
+//
+// To produce a standalone executable (WASI wrapper or native bundling):
+//   • On Unix: wrap the WASM runtime:
+//       echo '#!/usr/bin/env grain run' > hello && cat hello.wasm >> hello && chmod +x hello  
+//   • On Windows: rename the grain-runner binary to helloWorld.exe or use a bundler like pkg.
+//
+// For more information, see https://grain-lang.org/docs/guide/hello_world :contentReference[oaicite:6]{index=6}
+
+module Hello
+
+print("Hello, World!")

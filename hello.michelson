@@ -1,0 +1,30 @@
+// File: hello.tz
+// Year: 2018
+//
+// To get Michelson (Tezos language and tools):
+//   • Install the Tezos Client (includes Michelson interpreter/compiler):
+//       https://tezos.gitlab.io/user/install.html   :contentReference[oaicite:0]{index=0}
+//   • Or on macOS via Homebrew:
+//       brew install tezos-client
+//
+// To typecheck the script:
+//   tezos-client typecheck script hello.tz
+//
+// To run the script (mockup interpreter) with dummy parameter/storage:
+//   tezos-client run script hello.tz on storage 'Unit' and input 'Unit'   :contentReference[oaicite:1]{index=1}
+//
+// To bundle as a simple executable wrapper on Unix:
+//   echo '#!/usr/bin/env tezos-client run script hello.tz on storage Unit and input Unit' > hello.sh
+//   chmod +x hello.sh
+//   ./hello.sh
+//   (On Windows, wrap similarly in a .cmd or .bat file)
+//
+// # Hello, World! Michelson contract using TRACE for output
+parameter unit;
+storage unit;
+code {
+  CAR;
+  TRACE "Hello, World!";           # emit a log message during execution :contentReference[oaicite:2]{index=2}
+  NIL operation;
+  PAIR
+}

@@ -1,0 +1,29 @@
+// File: hello.sway
+// Year: 2023
+//
+// To get the Sway toolchain:
+//   Install fuelup (the Fuel toolchain manager):
+//     curl --proto '=https' --tlsv1.2 -sSf \
+//       https://fuellabs.github.io/fuelup/fuelup-init.sh | sh   :contentReference[oaicite:0]{index=0}
+//   Then install the latest toolchain:
+//     fuelup toolchain install latest
+//
+// To run the script directly (no separate compile):
+//   forc run hello.sway   :contentReference[oaicite:1]{index=1}
+//
+// To compile into deployable bytecode (in a project directory):
+//   forc build --release -o hello.bin   :contentReference[oaicite:2]{index=2}
+//
+// To execute the bytecode on a local Fuel node:
+//   fuel-core run --bin hello.bin   :contentReference[oaicite:3]{index=3}
+//
+// To make a standalone .exe on Windows (after native build):
+//   rename hello.exe helloWorld.exe
+//
+// Use `forc --help` for more commands.
+
+script;
+
+fn main() {
+    println("Hello, World!");
+}
