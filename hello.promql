@@ -1,0 +1,23 @@
+# File: hello.promql
+# Year: 2015
+#
+# To get Prometheus & promtool:
+#   • Download Prometheus (includes promtool) from https://prometheus.io/download/   :contentReference[oaicite:0]{index=0}
+#   • Unpack and add the `prometheus` and `promtool` binaries to your PATH.
+#
+# To run a simple instant query against your local Prometheus server:
+#   promtool query instant http://localhost:9090 'label_replace(vector(1), "message", "Hello, World!", "", "")'   :contentReference[oaicite:1]{index=1}
+#
+# To run a range query (over the last minute, sampled every 15s):
+#   promtool query range --start `date -d 'now - 1 minute' +%s` --end `date +%s` --step 15s http://localhost:9090 'label_replace(vector(1), "message", "Hello, World!", "", "")'   :contentReference[oaicite:2]{index=2}
+#
+# To format output as JSON:
+#   promtool query instant -o json http://localhost:9090 'label_replace(vector(1), "message", "Hello, World!", "", "")'   :contentReference[oaicite:3]{index=3}
+#
+# To bundle promtool as a standalone .exe on Windows:
+#   rename promtool.exe helloWorld.exe
+#
+# Since PromQL only handles numeric vectors and labels,
+# we attach our “Hello, World!” string as a metric label.
+
+label_replace(vector(1), "message", "Hello, World!", "", "")

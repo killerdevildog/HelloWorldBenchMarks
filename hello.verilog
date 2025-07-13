@@ -1,0 +1,26 @@
+// File: hello.v
+// Year: 1984 :contentReference[oaicite:0]{index=0}
+//
+// To get a Verilog simulator/compiler:
+//   • Icarus Verilog (free, open-source):
+//       sudo apt install iverilog  
+//   • Or Verilator (cycle-accurate, synthesizable):
+//       sudo apt install verilator  
+//
+// To compile with Icarus Verilog:
+//   iverilog -o hello hello.v  
+//
+// To run the simulation and see the output:
+//   vvp hello   :contentReference[oaicite:1]{index=1}
+//
+// Note: The simulation binary `hello` is already executable on Unix.  
+// On Windows, rename for a .exe file:
+//   rename hello.exe helloWorld.exe
+//
+// Hello, World! in Verilog:
+module hello;
+  initial begin
+    $display("Hello, World!");
+    $finish;
+  end
+endmodule

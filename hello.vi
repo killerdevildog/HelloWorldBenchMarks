@@ -1,0 +1,26 @@
+// File: hello.vi  
+// Year: 1986  
+//  
+// To get LabVIEW (the G programming environment):  
+//   • Download and install from NI:  
+//       https://www.ni.com/en-us/support/downloads/software-products/download.labview.html  
+//   • (Requires a LabVIEW license.)  
+//  
+// To create a “Hello, World!” VI (graphical source file):  
+//   1. Launch LabVIEW and choose “Blank VI.”  
+//   2. On the Front Panel, place a **String Indicator** (from the Controls palette).  
+//   3. Switch to the Block Diagram (Ctrl+E).  
+//   4. Place a **String Constant** (from the Functions ► Programming ► String palette),  
+//      set its value to `"Hello, World!"`, and wire it to the String Indicator terminal.  
+//   5. Save the VI as `hello.vi` in your project folder.  
+//  
+// To run your VI:  
+//   • In LabVIEW, click the **Run** ▶ button (or double-click the VI file in your OS).  
+//  
+// To build a standalone .exe (requires the Application Builder add-on):  
+//   1. In the Project Explorer, right-click **Build Specifications** → **New ▶ Application (EXE)**.  
+//   2. Under **Source Files**, add `hello.vi`.  
+//   3. Configure the build (executable name, icon, installer, etc.).  
+//   4. Click **Build** — LabVIEW will output `hello.exe`.  
+//  
+// Note: `.vi` files are binary graphical diagrams; there is no editable text “source” file.  

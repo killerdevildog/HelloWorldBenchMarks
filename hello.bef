@@ -1,0 +1,22 @@
+; File: hello.bef
+; Year: 1993 :contentReference[oaicite:0]{index=0}
+;
+; To get a Befunge-93 interpreter (reference implementation):
+;   git clone https://github.com/catseye/Befunge-93.git && cd Befunge-93/src && make :contentReference[oaicite:1]{index=1}
+;
+; To run your program:
+;   ./befunge93 hello.bef
+;   # or, if installed system‐wide:
+;   befunge93 hello.bef
+;
+; To compile to a native executable with bef2c (C translator):
+;   cd Befunge-93/src && make bef2c && ./bef2c hello.bef -o hello
+;
+; To make a .exe on Windows (post‐compile):
+;   rename hello.exe helloWorld.exe
+;
+>              v
+v ,,,,,"Hello"<
+>48*, v
+v,,,,,," World!"<
+>25*,@

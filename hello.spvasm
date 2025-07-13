@@ -1,0 +1,36 @@
+; File: hello.spvasm
+; Year: 2015  
+;
+; To get SPIRV-Tools:
+;   • Ubuntu/Debian: sudo apt install spirv-tools  
+;   • Or build from source:  
+;       git clone https://github.com/KhronosGroup/SPIRV-Tools.git  
+;       mkdir SPIRV-Tools/build && cd SPIRV-Tools/build  
+;       cmake .. && make && sudo make install  
+; 
+; To assemble to a binary SPIR-V module:
+;   spirv-as hello.spvasm -o hello.spv  
+; 
+; To validate the module:
+;   spirv-val hello.spv  
+; 
+; To disassemble back to text:
+;   spirv-dis hello.spv -o hello.dis  
+; 
+; SPIR-V is an intermediate shader/compute format—there’s no standalone console I/O.
+; To actually “run” this module you must:
+;   • Write a Vulkan or OpenCL host program that loads “hello.spv” and dispatches it,  
+;   • Or embed it in a framework like `vkcube` for inspection.  
+; 
+OpCapability Kernel
+OpMemoryModel Physical32 OpenCL  
+OpEntryPoint Kernel %main "main"  
+OpExecutionMode %main LocalSize 1 1 1  
+
+%void = OpTypeVoid  
+%func = OpTypeFunction %void  
+%main = OpFunction %void None %func  
+%label = OpLabel  
+  ; (No print instruction in SPIR-V: host must handle I/O or debug output.)  
+OpReturn  
+OpFunctionEnd  

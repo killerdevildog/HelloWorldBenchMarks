@@ -1,0 +1,25 @@
+// File: hello.piet.png
+// Year: 1995
+//
+// Piet programs are images. You need a Piet interpreter.
+// To get npiet (C interpreter):
+//   • Download from https://www.bertnase.de/npiet/   :contentReference[oaicite:0]{index=0}
+//     – Windows: npiet-1.1-win32.zip
+//     – Linux:   npiet-1.3f.tar.gz
+// To build from source:
+//   git clone https://github.com/gleitz/npiet.git && cd npiet && make
+//
+// To run your Piet image:
+//   npiet hello.piet.png
+//
+// Or use the Haskell `piet` interpreter:
+//   stack install piet            :contentReference[oaicite:1]{index=1}
+//   piet hello.piet.png
+//
+// To make a “helloWorld.exe” on Windows:
+//   rename npiet.exe helloWorld.exe
+//   (distribute it alongside hello.piet.png)
+//
+// Piet “Hello, World!” image:
+//   Download and save the sample from:
+//     https://www.dangermouse.net/esoteric/piet/samples.html#hello-world   :contentReference[oaicite:2]{index=2}

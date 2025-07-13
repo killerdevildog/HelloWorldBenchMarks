@@ -1,0 +1,21 @@
+// File: hello.dark  
+// Year: 2019  
+//  
+// To get the Darklang CLI:  
+//   • Download the single‐file binary for your OS:  
+//       https://ops-documentation.builtwithdark.com/user-manual/static-assets#installation   :contentReference[oaicite:0]{index=0}  
+//   • Or build from source:  
+//       git clone https://github.com/darklang/dark-cli.git && cd dark-cli && cargo build --release  
+//  
+// To run your script locally (interpreted—no separate compile):  
+//   ./darklang run hello.dark   :contentReference[oaicite:1]{index=1}  
+//  
+// To deploy as a live HTTP endpoint on Dark’s cloud platform:  
+//   darklang auth login  
+//   darklang deploy --project <PROJECT_ID>   :contentReference[oaicite:2]{index=2}  
+//  
+// To make a standalone “.exe” on Windows (rename the CLI binary):  
+//   rename darklang.exe helloWorld.exe  
+//  
+// Hello, World! script in Darklang:  
+"Hello, World!"  

@@ -1,0 +1,34 @@
+// File: hello.b
+// Year: 1995  
+//
+// To get Limbo compiler & Dis VM:  
+//   • Download Inferno OS (includes limbo & dis) from https://inferno-os.org/download   :contentReference[oaicite:0]{index=0}  
+//   • Or on Debian/Ubuntu install Plan9Port (which provides limbo):  
+//       sudo apt install plan9port  
+//       source /usr/local/lib/plan9port/rc/profile   :contentReference[oaicite:1]{index=1}  
+//   • Or build Inferno from source:  
+//       git clone https://github.com/gbenson/inferno.git && cd inferno && mk  
+//
+// To compile to Dis bytecode (.dis):  
+//   limbo hello.b   :contentReference[oaicite:2]{index=2}  
+//
+// To run the compiled program:  
+//   dis hello.dis   :contentReference[oaicite:3]{index=3}  
+//
+// To compile & run in one step:  
+//   limbo -run hello.b   :contentReference[oaicite:4]{index=4}  
+//
+// To make a standalone .exe on Windows (post‐compile under Plan9Port or Inferno on WSL):  
+//   rename hello.exe helloWorld.exe
+//
+// Hello, World! in Limbo:
+implement Command;
+
+include "sys.m";
+sys: Sys;
+
+init(nil: ref Draw->Context, nil: list of string)
+{
+    sys = load Sys Sys->PATH;
+    sys->print("Hello, World!\n");
+}

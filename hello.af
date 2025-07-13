@@ -1,0 +1,29 @@
+// File: hello.af
+// Year: 1992 :contentReference[oaicite:0]{index=0}
+//
+// To get the Alef compiler and tools:
+//   • On Plan 9: the Alef compiler (`a`) and loader (`l`) are included by default. :contentReference[oaicite:1]{index=1}  
+//   • On Linux/macOS via plan9port: install the `plan9port` package to get `a`/`l`. :contentReference[oaicite:2]{index=2}
+//
+// To compile and link on your architecture:
+//   • For AMD64 (x86_64), use `8a` and `8l`:
+//       8a hello.af      # compiles to hello.6  
+//       8l hello         # links and produces the executable `hello`  
+//   • Or generically, using your `$objtype` prefix (`6a`/`6l`, `5a`/`5l`, etc.):
+//       $objtype a hello.af  
+//       $objtype l hello   :contentReference[oaicite:3]{index=3}
+//
+// To run the program:
+//   ./hello
+//
+// To make a standalone .exe on Windows (plan9port under WSL):
+//   rename hello.exe helloWorld.exe
+//
+// Hello, World! in Alef:
+import "alef.h";
+
+void
+main()
+{
+    doprint("Hello, World!\n");
+}
