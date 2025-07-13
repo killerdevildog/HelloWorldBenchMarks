@@ -1,0 +1,12 @@
+// JRL (Java Regex): java -cp javaregex.jar RegexTester hello.jrl
+// JRL Compiler: jrlc hello.jrl && java RegexProgram
+// Java Pattern: javac -cp javaregex.jar Hello.java && java -cp .:javaregex.jar Hello
+// JFlex: jflex hello.jrl && javac *.java && java Main
+// ANTLR: antlr4 hello.jrl && javac *.java && java Main
+// JavaCC: javacc hello.jrl && javac *.java && java Main
+// CUP: cup hello.jrl && javac *.java && java Main
+// Regex to Java: regex2java hello.jrl HelloRegex.java && javac HelloRegex.java && java HelloRegex
+
+function main() = {
+    printLine("Hello World");
+}

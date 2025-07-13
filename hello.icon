@@ -1,0 +1,12 @@
+# Icon (run): icont hello.icon && ./hello
+# Icon (compile): icont hello.icon -o hello && ./hello
+# Icon (link): icont -c hello.icon && ilink hello
+# Icon (debug): icont -t hello.icon && ./hello
+# Icon (trace): icont -u hello.icon && ./hello
+# Icon (profile): icont -p hello.icon && ./hello
+# Icon (optimize): icont -O hello.icon && ./hello
+# Icon (unicon): unicon hello.icon && ./hello
+
+procedure main()
+    write("Hello World!")
+end

@@ -1,0 +1,10 @@
+// Malbolge (run): malbolge hello.malbolge
+// Malbolge (interpreter): malbolge < hello.malbolge
+// Malbolge (online): Use online Malbolge interpreter
+// Malbolge (emulator): malbolge-emulator hello.malbolge
+// Malbolge (debug): malbolge -d hello.malbolge
+// Malbolge (trace): malbolge -t hello.malbolge
+// Malbolge (step): malbolge -s hello.malbolge
+// Malbolge (compile): malbolge hello.malbolge (interpreted only)
+
+(=<`#9]~6ZY32Vx/4Rs+0No-&Jk)"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc

@@ -1,0 +1,17 @@
+C COMIT (run): comit hello.comit
+C COMIT (interpret): comit-interpreter hello.comit
+C COMIT (system): comit hello.comit
+C COMIT (batch): comit < hello.comit
+C COMIT (interactive): comit (then LOAD hello.comit)
+C COMIT (debug): comit -d hello.comit
+C COMIT (trace): comit -t hello.comit
+C COMIT (emulator): comit-emulator hello.comit
+
+C Hello World program in COMIT
+C COMIT was designed for string manipulation and pattern matching
+
+RULE 1
+INPUT = 'START'
+OUTPUT = 'Hello World!'
+PRINT OUTPUT
+END

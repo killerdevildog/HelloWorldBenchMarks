@@ -1,0 +1,39 @@
+/*
+ * filename: hello.pli
+ * language: PL/I (1964)
+ *
+ * Compile & run on IBM System/360 (PL/I F compiler):
+ *   $ PL1 Compiler HELLO.PLI,OBJECT=HELLO.OBJ
+ *   $ LINK HELLO.OBJ,LIB=PLILIB        # link with PL/I runtime
+ *   $ RUN HELLO
+ *
+ * Compile & run with IBM Enterprise PL/I for z/OS (batch JCL):
+ *   //COMPILE  EXEC PGM=PLMIGEN,PARM='TYPE=HFS'
+ *   //STEPLIB  DD DISP=SHR,DSN=PL1.LOADLIB
+ *   //SYSLIB   DD DISP=SHR,DSN=PL1.SOURCE
+ *   //SYSIN    DD *
+ *     /* Source follows */
+ *     /* See below */
+ *   //SYSUT1   DD UNIT=SYSDA,SPACE=(CYL,(5,5))
+ *   //SYSLMOD  DD DISP=SHR,DSN=YOUR.LOADLIB(HELLO)
+ *
+ * Micro Focus PL/I (Windows/Linux):
+ *   $ pli hello.pli -o hello.exe        # on Windows
+ *   $ ./hello.exe
+ *   $ pli hello.pli -o hello            # on Linux
+ *   $ ./hello
+ *
+ * Open PL/I for IBM Z:
+ *   $ icc hello.pli -o hello            # compiles and binds
+ *   $ ./hello
+ *
+ * GNU p11c (if available):
+ *   $ p1c hello.pli -o hello
+ *   $ ./hello
+ *
+ * Interpreter:
+ *   (No widely used interactive PL/I interpreter; some IDEs provide REPL-like consoles)
+ */
+hello: procedure(options(main));
+   put skip list('Hello, World!');
+end hello;

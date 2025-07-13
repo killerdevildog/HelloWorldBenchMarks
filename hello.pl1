@@ -1,0 +1,13 @@
+/* PL/I (compile): pli hello.pl1 && ./hello
+/* PL/I (IBM): icc hello.pl1 && ./hello
+/* PL/I (Micro Focus): mfpli hello.pl1 && ./hello
+/* PL/I (Iron Spring): ispli hello.pl1 && ./hello
+/* PL/I (GNU): gpli hello.pl1 && ./hello
+/* PL/I (system): pli hello.pl1 -o hello && ./hello
+/* PL/I (optimize): pli -O hello.pl1 && ./hello
+/* PL/I (debug): pli -g hello.pl1 && ./hello
+
+HELLO: PROCEDURE OPTIONS(MAIN);
+    /* Hello World program in PL/I */
+    PUT LIST('Hello World!');
+END HELLO;

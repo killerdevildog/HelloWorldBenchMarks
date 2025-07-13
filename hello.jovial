@@ -1,0 +1,23 @@
+C JOVIAL (compile): jovial hello.jovial && ./hello
+C JOVIAL (system): jovial hello.jovial -o hello && ./hello
+C JOVIAL (batch): jovial < hello.jovial
+C JOVIAL (interactive): jovial (then COMPILE hello.jovial)
+C JOVIAL (debug): jovial -d hello.jovial && ./hello
+C JOVIAL (optimize): jovial -O hello.jovial && ./hello
+C JOVIAL (portable): jovial hello.jovial && link hello
+C JOVIAL (military): mil-jovial hello.jovial && ./hello
+
+BEGIN
+C Hello World program in JOVIAL
+C JOVIAL was designed for military real-time systems
+
+    COMPOOL;
+    
+    PROC HELLO;
+    BEGIN
+        OUTPUT("Hello World!");
+    END;
+    
+    HELLO;
+    
+END;

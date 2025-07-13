@@ -1,0 +1,16 @@
+(* Modula-3 (compile): m3build hello.mod3 && ./hello *)
+(* Modula-3 (cm3): cm3 hello.mod3 && ./hello *)
+(* Modula-3 (pm3): pm3 hello.mod3 && ./hello *)
+(* Modula-3 (src): m3 hello.mod3 && ./hello *)
+(* Modula-3 (critical mass): cm3 -build hello.mod3 && ./hello *)
+(* Modula-3 (polytechnique): pm3 -build hello.mod3 && ./hello *)
+(* Modula-3 (system): m3build -T hello.mod3 && ./hello *)
+(* Modula-3 (debug): m3build -g hello.mod3 && ./hello *)
+
+MODULE Hello EXPORTS Main;
+
+IMPORT IO;
+
+BEGIN
+    IO.Put("Hello World!\n")
+END Hello.

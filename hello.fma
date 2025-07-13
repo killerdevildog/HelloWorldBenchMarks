@@ -1,0 +1,30 @@
+/*
+ * filename: hello.fma
+ * language: FLOW-MATIC
+ *
+ * FLOW-MATIC (developed 1955–56 by Grace Hopper et al. on the UNIVAC I/II) was one of the first
+ * English‐like data processing languages. It was translated into machine code by the FLOW-MATIC
+ * compiler and linked against its runtime library.
+ *
+ * To compile & run on original UNIVAC hardware:
+ *
+ *   $ FLOW-MATIC TRANSLATE HELLO.FMA,OBJ=HELLO.OBJ
+ *   $ LINK         HELLO.OBJ,LIB=FLOWLIB
+ *   $ RUN          HELLO
+ *
+ * Under SimH UNIVAC II emulation:
+ *
+ *   $ simh/univac                # start the emulator
+ *   > ATTACH DISK <path>/HELLO.FMA      # load source
+ *   > FLOWMATIC TRANSLATE HELLO.FMA,OBJ=HELLO.OBJ
+ *   > LINK         HELLO.OBJ,LIB=FLOWLIB
+ *   > RUN          HELLO
+ *
+ * (No standalone interpreter is publicly available.)
+ */
+
+JOB HELLO;
+STEP PRINT_STEP;
+    PRINT 'HELLO, WORLD';
+END STEP;
+END JOB.

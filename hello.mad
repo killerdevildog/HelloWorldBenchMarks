@@ -1,0 +1,13 @@
+C MAD (compile): mad hello.mad && ./hello
+C MAD (Michigan): michigan-mad hello.mad && ./hello
+C MAD (system): mad hello.mad -o hello && ./hello
+C MAD (batch): mad < hello.mad
+C MAD (interactive): mad (then COMPILE hello.mad)
+C MAD (debug): mad -d hello.mad && ./hello
+C MAD (optimize): mad -O hello.mad && ./hello
+C MAD (portable): mad hello.mad && link hello
+
+      COMPILE EXECUTION
+      PRINT FORMAT MESSAGE, $Hello World!$
+      MESSAGE: $*$
+      END OF PROGRAM

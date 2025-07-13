@@ -1,0 +1,15 @@
+# Ratfor (compile): ratfor hello.ratfor > hello.f && f77 hello.f -o hello && ./hello
+# Ratfor (gfortran): ratfor hello.ratfor > hello.f && gfortran hello.f -o hello && ./hello
+# Ratfor (f90): ratfor hello.ratfor > hello.f90 && f90 hello.f90 -o hello && ./hello
+# Ratfor (preprocess): ratfor hello.ratfor > hello.f
+# Ratfor (debug): ratfor -d hello.ratfor > hello.f && f77 -g hello.f -o hello && ./hello
+# Ratfor (optimize): ratfor hello.ratfor > hello.f && f77 -O hello.f -o hello && ./hello
+# Ratfor (system): ratfor hello.ratfor | f77 -o hello && ./hello
+# Ratfor (portable): ratfor hello.ratfor > hello.f && f77 hello.f && ./a.out
+
+# Hello World program in Ratfor
+program hello
+    write(6, 100)
+100 format('Hello World!')
+    stop
+    end

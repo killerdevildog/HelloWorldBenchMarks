@@ -1,0 +1,30 @@
+/*
+ * filename: hello.plk
+ * language: Plankalkül (linearized “Plankalkül 2000”)
+ * 
+ * Plankalkül has never had a native, vendor‐supplied compiler.  
+ * Historically the first real compiler was in Joachim Hohmann’s 1975 dissertation, 
+ * and then a 2000-implementation at the Free University of Berlin.  
+ * Today the easiest way to run Plankalkül is via:
+ *
+ * 1) Java interpreter by Peter Shoes (2022):
+ *    $ git clone https://github.com/peter-shoes/plankalkul.git
+ *    $ cd plankalkul
+ *    $ javac Plankalkul.java Scanner.java Token.java TokenType.java
+ *    $ # (optional) pip install plankalkul-py   # if you want the Python port
+ *    $ java Plankalkul ../hello.plk
+ *
+ * 2) Python interpreter (bundled in the same repo):
+ *    $ # after cloning above...
+ *    $ python3 interpreter.py ../hello.plk
+ *
+ * (No other compilers are publicly available at present.) :contentReference[oaicite:0]{index=0}
+ */
+
+P1   C0<13×S8>    → (R0<13×S8>)
+    R0 := C0
+
+P1
+
+C0 = "Hello, World!"
+P1()    ⟶ // call program P1, prints “Hello, World!” via the interpreter

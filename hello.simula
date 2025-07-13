@@ -1,0 +1,14 @@
+! Simula (compile): simula hello.simula && ./hello
+! Simula (cim): cim hello.simula && ./hello
+! Simula (run): simula -r hello.simula
+! Simula (debug): simula -d hello.simula && ./hello
+! Simula (trace): simula -t hello.simula && ./hello
+! Simula (batch): simula -b hello.simula
+! Simula (interactive): simula (then COMPILE("hello.simula"))
+! Simula (system): simula hello.simula -o hello && ./hello
+
+BEGIN
+    COMMENT This is a hello world program in Simula;
+    OUTTEXT("Hello World!");
+    OUTIMAGE
+END

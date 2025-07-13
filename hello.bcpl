@@ -1,0 +1,15 @@
+// BCPL (run): bcpl hello.bcpl && cintsys
+// BCPL (compile): bcpl hello.bcpl -o hello && ./hello
+// BCPL (cintcode): bcpl hello.bcpl && cintpos hello
+// BCPL (native): bcpl hello.bcpl -n && ./hello
+// BCPL (ocode): bcpl hello.bcpl -t o && ocode hello.o
+// BCPL (debug): bcpl hello.bcpl -g && cintsys -g hello
+// BCPL (portable): bcpl hello.bcpl && cintpos hello
+// BCPL (system): bcpl hello.bcpl && sys hello
+
+GET "libhdr"
+
+LET start() BE
+$(
+    writes("Hello World!*n")
+$)

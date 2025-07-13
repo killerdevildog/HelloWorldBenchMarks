@@ -1,0 +1,27 @@
+/*
+ * filename: hello.a0
+ * language: A-0 System
+ *
+ * The A-0 System (Arithmetic Language version 0), developed by Grace Hopper in 1951–52 for the UNIVAC I,
+ * acted as a loader/linker rather than a modern compiler. You specify subroutine codes and their arguments,
+ * and A-0 emits native machine code for the UNIVAC I :contentReference[oaicite:0]{index=0}.
+ *
+ * Historical translate & run on original UNIVAC I:
+ *   $ A0 < hello.a0 > hello.obj
+ *   $ LINK < hello.obj > hello.bin,LIB=SYSLIB
+ *   $ RUN hello.bin
+ *
+ * Emulation via SimH UNIVAC I:
+ *   $ git clone https://github.com/simh/simh
+ *   $ cd simh
+ *   $ ./configure --enable-univac
+ *   $ make univac
+ *   $ build/univac -i hello.a0          # SimH invokes A-0 translator & executes
+ *
+ * (No other public compilers or interpreters for A-0 are known today.)
+ */
+
+/* Program: call subroutine 1 to print a null-terminated string, then subroutine 0 to halt */
+
+1  HELLO, WORLD! 0
+0

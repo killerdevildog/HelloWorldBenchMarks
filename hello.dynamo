@@ -1,0 +1,16 @@
+C DYNAMO (run): dynamo hello.dynamo
+C DYNAMO (simulate): dynamo-sim hello.dynamo
+C DYNAMO (system): dynamo hello.dynamo
+C DYNAMO (batch): dynamo < hello.dynamo
+C DYNAMO (interactive): dynamo (then RUN hello.dynamo)
+C DYNAMO (debug): dynamo -d hello.dynamo
+C DYNAMO (trace): dynamo -t hello.dynamo
+C DYNAMO (plot): dynamo -p hello.dynamo
+
+C Hello World program in DYNAMO
+C DYNAMO was designed for system dynamics simulation
+
+NOTE Hello World Example
+L MESSAGE.K = "Hello World!"
+PRINT MESSAGE
+RUN

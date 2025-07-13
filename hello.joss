@@ -1,0 +1,11 @@
+C JOSS (run): joss hello.joss
+C JOSS (interactive): joss (then GET hello.joss)
+C JOSS (batch): joss < hello.joss
+C JOSS (system): joss hello.joss
+C JOSS (emulator): joss-emulator hello.joss
+C JOSS (simulator): joss-sim hello.joss
+C JOSS (interpret): joss -i hello.joss
+C JOSS (file): joss -f hello.joss
+
+1.1 TYPE "Hello World!".
+1.2 STOP.

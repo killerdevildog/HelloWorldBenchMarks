@@ -1,0 +1,13 @@
+// SLIP (run): slip hello.slip
+// SLIP (interpret): slip-interpreter hello.slip
+// SLIP (system): slip hello.slip
+// SLIP (batch): slip < hello.slip
+// SLIP (interactive): slip (then LOAD hello.slip)
+// SLIP (debug): slip -d hello.slip
+// SLIP (trace): slip -t hello.slip
+// SLIP (emulator): slip-emulator hello.slip
+
+BEGIN
+    // Hello World program in SLIP
+    PRINT("Hello World!")
+END

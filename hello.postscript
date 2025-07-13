@@ -1,0 +1,14 @@
+% PostScript (run): gs hello.postscript
+% PostScript (ghostscript): ghostscript hello.postscript
+% PostScript (display): gs -dNOPAUSE -dBATCH hello.postscript
+% PostScript (print): lpr hello.postscript
+% PostScript (pdf): ps2pdf hello.postscript hello.pdf
+% PostScript (eps): ps2eps hello.postscript
+% PostScript (interpreter): gv hello.postscript
+% PostScript (distill): distill hello.postscript
+
+%!PS-Adobe-3.0
+/Helvetica 24 selectfont
+100 700 moveto
+(Hello World!) show
+showpage

@@ -1,0 +1,12 @@
+💭 Emojicode (binary): emojicodec hello.emojic && ./hello
+💭 Emojicode (run): emojic hello.emojic
+💭 Emojicode (compile): emojicodec hello.emojic -o hello && ./hello
+💭 Emojicode (debug): emojicodec -d hello.emojic && ./hello
+💭 Emojicode (optimized): emojicodec -O hello.emojic && ./hello
+💭 Manual build: emojicodec hello.emojic -o hello.o && ld hello.o -o hello && ./hello
+🐇 🐼 🍇
+  🐇🐖 🏁 ➡️ 🚂 🍇
+    😀 🔤Hello world!🔤
+    🍎 0
+  🍉
+🍉

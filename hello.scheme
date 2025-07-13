@@ -1,0 +1,11 @@
+;; Scheme (run): scheme hello.scheme
+;; Scheme (Guile): guile hello.scheme
+;; Scheme (MIT): mit-scheme < hello.scheme
+;; Scheme (Chicken): csi hello.scheme
+;; Scheme (Gambit): gsi hello.scheme
+;; Scheme (Bigloo): bigloo hello.scheme -o hello && ./hello
+;; Scheme (Racket): racket hello.scheme
+;; Scheme (Chez): chez hello.scheme
+
+(display "Hello World!")
+(newline)

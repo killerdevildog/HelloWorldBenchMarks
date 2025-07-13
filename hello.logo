@@ -1,0 +1,11 @@
+; Logo (run): logo hello.logo
+; Logo (UCBLogo): logo < hello.logo
+; Logo (MSWLogo): mswlogo hello.logo
+; Logo (FMSLogo): fmslogo hello.logo
+; Logo (StarLogo): starlogo hello.logo
+; Logo (NetLogo): netlogo hello.logo
+; Logo (interactive): logo (then load "hello.logo)
+; Logo (batch): logo -b hello.logo
+
+print [Hello World!]
+bye

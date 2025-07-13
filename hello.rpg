@@ -1,0 +1,15 @@
+// RPG (compile): CRTRPGMOD hello.rpg && CRTPGM hello && CALL hello
+// RPG (ILE): CRTRPGPGM hello.rpg && CALL hello
+// RPG (free format): CRTRPGMOD hello.rpg && CRTPGM hello
+// RPG (AS/400): CRTRPGPGM hello.rpg
+// RPG (System i): CRTRPGPGM hello.rpg
+// RPG (interactive): STRRPG hello.rpg
+// RPG (batch): SBMJOB CMD(CALL hello)
+// RPG (debug): STRDBG PGM(hello)
+
+     H DFTACTGRP(*NO) ACTGRP(*NEW)
+     
+     D msg             S             50A   INZ('Hello World!')
+     
+     C                   DSPLY                   msg
+     C                   RETURN

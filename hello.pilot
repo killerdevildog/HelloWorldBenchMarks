@@ -1,0 +1,10 @@
+R: PILOT (run): pilot hello.pilot
+R: PILOT (interpret): pilot -i hello.pilot
+R: PILOT (batch): pilot < hello.pilot
+R: PILOT (system): pilot hello.pilot
+R: PILOT (emulator): pilot-emulator hello.pilot
+R: PILOT (simulator): pilot-sim hello.pilot
+R: PILOT (execute): pilot -e hello.pilot
+R: PILOT (file): pilot -f hello.pilot
+
+T:Hello World!

@@ -1,0 +1,11 @@
+* SNOBOL (run): snobol4 hello.snobol
+* SNOBOL (compile): snobol4 -c hello.snobol && ./hello
+* SNOBOL (csnobol): csnobol4 hello.snobol
+* SNOBOL (macro): macro-snobol4 hello.snobol
+* SNOBOL (debug): snobol4 -d hello.snobol
+* SNOBOL (trace): snobol4 -t hello.snobol
+* SNOBOL (batch): snobol4 -b hello.snobol
+* SNOBOL (interactive): snobol4 (then -INCLUDE hello.snobol)
+
+        OUTPUT = "Hello World!"
+END

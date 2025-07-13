@@ -1,0 +1,18 @@
+* GPSS (run): gpss hello.gpss
+* GPSS (simulate): gpss-sim hello.gpss
+* GPSS (system): gpss hello.gpss
+* GPSS (batch): gpss < hello.gpss
+* GPSS (interactive): gpss (then INCLUDE hello.gpss)
+* GPSS (debug): gpss -d hello.gpss
+* GPSS (trace): gpss -t hello.gpss
+* GPSS (world): gpss-world hello.gpss
+
+* Hello World program in GPSS (General Purpose Simulation System)
+* GPSS was designed for discrete event simulation
+
+        SIMULATE
+        GENERATE    1
+        PRINT       "Hello World!"
+        TERMINATE   1
+        START       1
+        END

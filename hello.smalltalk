@@ -1,0 +1,10 @@
+"Smalltalk (GNU): gst hello.smalltalk"
+"Smalltalk (Squeak): squeak hello.smalltalk"
+"Smalltalk (Pharo): pharo hello.smalltalk"
+"Smalltalk (VisualWorks): visualworks hello.smalltalk"
+"Smalltalk (Dolphin): dolphin hello.smalltalk"
+"Smalltalk (script): gst -f hello.smalltalk"
+"Smalltalk (batch): gst < hello.smalltalk"
+"Smalltalk (interactive): gst (then FileStream fileIn: 'hello.smalltalk')"
+
+Transcript show: 'Hello World!'; cr.

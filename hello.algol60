@@ -1,0 +1,14 @@
+comment ALGOL 60 (run): algol60 hello.algol60
+comment ALGOL 60 (Marst): marst-algol60 hello.algol60
+comment ALGOL 60 (Elliott): elliott-algol60 hello.algol60
+comment ALGOL 60 (Burroughs): burroughs-algol60 hello.algol60
+comment ALGOL 60 (GENIE): genie-algol60 hello.algol60
+comment ALGOL 60 (RRA): rra-algol60 hello.algol60
+comment ALGOL 60 (emulator): algol60-emulator hello.algol60
+comment ALGOL 60 (translator): algol60-translator hello.algol60
+
+'BEGIN'
+    'COMMENT' Hello World program in ALGOL 60;
+    outstring(1, 'Hello World!');
+    outchar(1, 10)
+'END'

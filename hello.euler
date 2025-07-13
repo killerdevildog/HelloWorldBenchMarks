@@ -1,0 +1,14 @@
+comment Euler (run): euler hello.euler
+comment Euler (compile): euler-compile hello.euler && ./hello
+comment Euler (interpret): euler-interpret hello.euler
+comment Euler (system): euler hello.euler
+comment Euler (batch): euler < hello.euler
+comment Euler (interactive): euler (then read hello.euler)
+comment Euler (debug): euler -d hello.euler
+comment Euler (trace): euler -t hello.euler
+
+begin
+    comment Hello World program in Euler;
+    out("Hello World!");
+    newline
+end

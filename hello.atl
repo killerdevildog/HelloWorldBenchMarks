@@ -1,0 +1,28 @@
+/*
+ * filename: hello.atl
+ * language: Autocode (Atlas Autocode)
+ *
+ * Atlas Autocode was compiled on the Manchester Atlas computer.  Typical compile & run steps on original hardware:
+ *
+ * 1) Compile source into object:
+ *    $ AUTOCODE COMP hello.atl     # produces hello.obj
+ *
+ * 2) Link with standard library:
+ *    $ LINK hello.obj,LIB=SYS     # produces executable module HELLO
+ *
+ * 3) Run the program:
+ *    $ RUN HELLO
+ *
+ * Emulation (using the Atlas emulator toolkit):
+ *
+ *    $ atlas_autocode hello.atl    # compiles to hello.obj
+ *    $ atlas_link hello.obj        # links into executable
+ *    $ atlas_run hello             # runs the executable
+ *
+ * (No standalone interpreter exists for Atlas Autocode outside these compile/link/run tools.)
+ */
+
+PROGRAM HELLOWORLD;
+BEGIN
+    WRITE('HELLO, WORLD!');
+END PROGRAM HELLOWORLD.

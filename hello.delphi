@@ -1,0 +1,13 @@
+{ Delphi IDE: F9 (compile and run) or Ctrl+F9 (compile) }
+{ Delphi Command Line: dcc32 hello.pas && hello.exe }
+{ Delphi 64-bit: dcc64 hello.pas && hello.exe }
+{ Free Pascal: fpc hello.pas && ./hello }
+{ Lazarus IDE: F9 (compile and run) or Ctrl+F9 (compile) }
+{ Turbo Pascal: tpc hello.pas && hello.exe }
+{ PascalABC.NET: pabcnetc hello.pas && hello.exe }
+{ GNU Pascal: gpc hello.pas -o hello && ./hello }
+
+procedure TForm1.ShowAMessage;
+begin
+  ShowMessage('Hello World!');
+end;

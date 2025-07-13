@@ -1,0 +1,11 @@
+C FOCAL (run): focal hello.focal
+C FOCAL (interactive): focal (then LOAD hello.focal)
+C FOCAL (batch): focal < hello.focal
+C FOCAL (system): focal hello.focal
+C FOCAL (emulator): focal-emulator hello.focal
+C FOCAL (simulator): focal-sim hello.focal
+C FOCAL (pdp8): pdp8-focal hello.focal
+C FOCAL (execute): focal -e hello.focal
+
+01.10 TYPE "Hello World!",!
+01.20 QUIT

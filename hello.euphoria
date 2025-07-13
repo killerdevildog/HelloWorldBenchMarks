@@ -1,0 +1,26 @@
+-- 
+-- filename: hello.e
+-- language: Euphoria (1993)
+--
+-- Euphoria source can be run interpreted or compiled to a native executable.
+--
+-- 1) Interpret directly:
+--    $ eui hello.e
+--
+-- 2) Compile to native executable:
+--    $ eupc -exe hello hello.e      -- produces “hello” (or “hello.exe” on Windows)
+--    $ ./hello
+--
+-- 3) Compile to C then build:
+--    $ eupc -c hello.e               -- generates “hello.c” and header
+--    $ gcc -std=c99 -O2 -o hello hello.c -leuphoria
+--    $ ./hello
+--
+-- 4) Generate debug build:
+--    $ eupc -g -exe hello hello.e
+--    $ gdb ./hello
+--
+-- (No purely separate interpreter beyond `eui`; compilation is via the official `eupc` tool.)
+--
+
+puts(1, "Hello, World!\n")

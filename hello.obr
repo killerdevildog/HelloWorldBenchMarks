@@ -1,0 +1,17 @@
+(* Oberon (compile): obc hello.obr && ./hello *)
+(* Oberon (system): oberon hello.obr && ./hello *)
+(* Oberon (vishap): voc hello.obr && ./hello *)
+(* Oberon (oo2c): oo2c hello.obr && ./hello *)
+(* Oberon (native): ofront hello.obr && ./hello *)
+(* Oberon (blackbox): bbdev hello.obr && ./hello *)
+(* Oberon (component pascal): cpfront hello.obr && ./hello *)
+(* Oberon (active): aos hello.obr && ./hello *)
+
+MODULE Hello;
+
+IMPORT Out;
+
+BEGIN
+    Out.String("Hello World!");
+    Out.Ln
+END Hello.

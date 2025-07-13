@@ -1,0 +1,18 @@
+C NELIAC (compile): neliac hello.neliac && ./hello
+C NELIAC (system): neliac hello.neliac -o hello && ./hello
+C NELIAC (batch): neliac < hello.neliac
+C NELIAC (interactive): neliac (then COMPILE hello.neliac)
+C NELIAC (debug): neliac -d hello.neliac && ./hello
+C NELIAC (optimize): neliac -O hello.neliac && ./hello
+C NELIAC (portable): neliac hello.neliac && link hello
+C NELIAC (navy): navy-neliac hello.neliac && ./hello
+
+BEGIN
+C Hello World program in NELIAC
+C NELIAC was the Navy Electronics Laboratory Implementation of ALGOL
+
+    COMMENT This is a hello world program in NELIAC;
+    OUTSTRING(1, "Hello World!");
+    OUTCHAR(1, 10);
+    
+END

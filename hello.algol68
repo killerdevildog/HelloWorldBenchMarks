@@ -1,0 +1,13 @@
+CO ALGOL 68 (run): a68g hello.algol68
+CO ALGOL 68 (compile): a68g --compile hello.algol68 && ./hello
+CO ALGOL 68 (optimized): a68g --optimise hello.algol68 && ./hello
+CO ALGOL 68 (debug): a68g --debug hello.algol68 && ./hello
+CO ALGOL 68 (trace): a68g --trace hello.algol68 && ./hello
+CO ALGOL 68 (check): a68g --check hello.algol68
+CO ALGOL 68 (strict): a68g --strict hello.algol68 && ./hello
+CO ALGOL 68 (portable): a68g --portcheck hello.algol68 && ./hello
+
+BEGIN
+  CO This is a hello world program in ALGOL 68 CO
+  print(("Hello World!", newline))
+END

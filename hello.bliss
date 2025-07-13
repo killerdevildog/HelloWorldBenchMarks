@@ -1,0 +1,23 @@
+! BLISS (compile): bliss hello.bliss && ./hello
+! BLISS (VAX): vax-bliss hello.bliss && ./hello
+! BLISS (PDP-11): pdp11-bliss hello.bliss && ./hello
+! BLISS (Alpha): alpha-bliss hello.bliss && ./hello
+! BLISS (system): bliss hello.bliss -o hello && ./hello
+! BLISS (optimize): bliss -O hello.bliss && ./hello
+! BLISS (debug): bliss -g hello.bliss && ./hello
+! BLISS (portable): bliss hello.bliss && link hello
+
+MODULE hello =
+BEGIN
+
+FORWARD ROUTINE
+    main : NOVALUE;
+
+ROUTINE main : NOVALUE =
+BEGIN
+    $WRITE_STRING('Hello World!');
+    $WRITE_STRING(%CHAR(13, 10))
+END;
+
+END
+ELUDOM
